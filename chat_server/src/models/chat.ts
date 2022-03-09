@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const roomSchema = new Schema({
+const chatSchema = new Schema({
   message: {
     type: String,
     required: true,
@@ -12,6 +12,6 @@ const roomSchema = new Schema({
   timestamps: true
 })
 
-const Rooms = mongoose.model('user', roomSchema)
+const Chats = mongoose.model('user', chatSchema)
 
-module.exports = Rooms
+module.exports = Chats
